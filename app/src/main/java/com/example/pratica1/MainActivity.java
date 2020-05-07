@@ -37,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void ChangeViewToGps(View view){
+        Intent intent = new Intent(this, Gps.class);
+        startActivity(intent);
+    }
+
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessage.class);
         EditText textToSend = (EditText) findViewById(R.id.text);
