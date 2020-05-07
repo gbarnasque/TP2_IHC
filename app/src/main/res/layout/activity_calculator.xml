@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <EditText
+        android:id="@+id/num_1"
+        android:layout_width="373dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Operando 1:"
+        android:inputType="numberSigned|number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/btn_sum"
+        app:layout_constraintTop_toBottomOf="@+id/num_2" />
+
+    <Button
+        android:id="@+id/btn_sum"
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="24dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_2" />
+
+    <Button
+        android:id="@+id/btn_divide"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_2" />
+
+    <Button
+        android:id="@+id/btn_mult"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="x"
+        app:layout_constraintEnd_toStartOf="@+id/btn_divide"
+        app:layout_constraintStart_toEndOf="@+id/btn_sub"
+        app:layout_constraintTop_toBottomOf="@+id/num_2" />
+
+    <EditText
+        android:id="@+id/num_2"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Operando 2:"
+        android:inputType="numberSigned|number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_1" />
+
+    <TextView
+        android:id="@+id/resCalculator"
+        android:layout_width="364dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Resultado: 0.0"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
