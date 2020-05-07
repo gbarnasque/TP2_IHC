@@ -40,7 +40,7 @@ public class Luminosity extends AppCompatActivity implements SensorEventListener
     @Override
     public void onSensorChanged(SensorEvent event){
         if(sensor.getType() == Sensor.TYPE_LIGHT){
-            luminosityText.setText("Intensidade da luz: " + event.values[0]);
+            luminosityText.setText("Intensidade da luz: " + event.values[0] + " lx");
         }
     }
 

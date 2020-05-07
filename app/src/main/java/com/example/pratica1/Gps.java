@@ -42,8 +42,8 @@ public class Gps extends AppCompatActivity {
             public void onClick(View v) {
                 Location l = tracker.getLocation();
                 if(l != null){
-                    lat.setText("Latitude: " + l.getLatitude());
-                    lon.setText("Longitude: "+ l.getLongitude());
+                    lat.setText("Latitude: " + l.getLatitude() + " graus");
+                    lon.setText("Longitude: "+ l.getLongitude() + " graus");
                 }
                 else{
                     lat.setText("Latitude: -");

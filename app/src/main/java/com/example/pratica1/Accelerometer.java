@@ -57,9 +57,9 @@ public class Accelerometer extends AppCompatActivity implements SensorEventListe
                 startActivity(intent);
             }
 
-            coordinateX.setText("X: "+ sensorX);
-            coordinateY.setText("Y: "+ sensorY);
-            coordinateZ.setText("Z: "+ sensorZ);
+            coordinateX.setText("X: "+ sensorX + "   m/s^2");
+            coordinateY.setText("Y: "+ sensorY + "   m/s^2");
+            coordinateZ.setText("Z: "+ sensorZ + "   m/s^2");
 
             oldXValue = sensorX;
             oldYValue = sensorY;

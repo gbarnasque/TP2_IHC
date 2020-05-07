@@ -37,9 +37,9 @@ public class Gyroscope extends AppCompatActivity implements SensorEventListener 
     @Override
     public void onSensorChanged(SensorEvent event){
         if(event.sensor.getType()== Sensor.TYPE_GYROSCOPE) {
-            coordinateX.setText("X: " + event.values[0]);
-            coordinateY.setText("Y: " + event.values[1]);
-            coordinateZ.setText("Z: " + event.values[2]);
+            coordinateX.setText("X: " + event.values[0] + "   rad/s");
+            coordinateY.setText("Y: " + event.values[1] + "   rad/s");
+            coordinateZ.setText("Z: " + event.values[2] + "   rad/s");
         }
     }
 
